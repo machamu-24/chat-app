@@ -65,6 +65,22 @@
     height: 100px;
     background-color: #ffffff;
     padding: 0 40px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.chatroom_name{
+    font-size: 24px;
+    color: #333;
+}
+
+.chatend_button{
+    color: darkred;
+    text-decoration: none;
+    font-size: 16px;
+    border: solid 1px darkred;
+    padding: 20px;
 }
 
 .main_chat_bar{
