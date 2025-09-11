@@ -20,6 +20,11 @@
     justify-content: space-between;
 }
 
+.side_top a{
+    text-decoration: none;
+    color: white;
+}
+
 .side_bottom{
     width: 300px;
     height: calc(100vh - 100px);
