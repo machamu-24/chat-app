@@ -4,20 +4,7 @@
         <a  href="#" class="chatend_button">チャットを終了する</a>
     </div>
     <div class="main_chat_bar">
-        <div class="messages_list">
-            <div class="message_list_header">
-                <p class="message_name">Tom</p>
-                <p class="message_time">2025/9/7(Sun)12:00</p>
-            </div>
-            <p class="message_text">おはよう</p>
-        </div>
-       <div class="messages_list">
-            <div class="message_list_header">
-                <p class="message_name">Tom</p>
-                <p class="message_time">2025/9/7(Sun)12:00</p>
-            </div>
-            <p class="message_text">おはよう</p>
-        </div>
+        <%= render partial: 'message', collection: @messages %>
     </div>
     <div class="main_bottom_bar">
         <%= form_with model: [@room, @message], html: {class: "form"}, local: true do |f| %>
