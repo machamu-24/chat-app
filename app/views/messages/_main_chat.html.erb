@@ -1,7 +1,7 @@
 <div class="main_bar">
     <div class="main_top_bar">
         <div class="chatroom_name"><%= @room.name %></div>
-        <a  href="#" class="chatend_button">チャットを終了する</a>
+        <%= link_to "チャットを終了する", room_path(@room), data: { turbo_method: :delete } %>
     </div>
     <div class="main_chat_bar">
         <%= render partial: 'message', collection: @messages %>
